@@ -1,0 +1,37 @@
+.tableTransaction {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 400px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.tableTransaction__head {
+    color: white;
+    background-color: cornflowerblue;
+    text-transform: uppercase;
+}
+
+.tableTransaction__body {
+    color: rgb(85, 84, 84);
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+td {
+    text-align: center;
+}
+
+.tableTransaction__body tr:nth-child(even) {
+    background-color: beige;
+}
+
+td:nth-Child(1) {
+    padding-left: 25px;
+    text-align: left;
+    text-transform: capitalize;
+}
+

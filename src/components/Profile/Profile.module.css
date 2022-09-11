@@ -9,7 +9,9 @@
 .avatar {
     margin-bottom: 10px;
     border-radius: 50%;
-    width: 100px
+    border: 3px solid black;
+    width: 100px;
+    box-shadow: 2px 8px 20px darkgrey;
 }
 
 .name {
@@ -31,8 +33,6 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding-top: 5px;   
-    padding-bottom: 10px;
     background-color:rgb(163, 190, 241);
 }
 
@@ -43,4 +43,9 @@
 
 .quantity {
     font-weight: bold;
+}
+
+li {
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
