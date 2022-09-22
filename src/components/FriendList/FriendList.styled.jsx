@@ -1,4 +1,6 @@
-.friendList {
+import styled from 'styled-components';
+
+export const FriendListLs = styled.ul`
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -7,9 +9,9 @@
     text-align: center;
     width: 220px;
     background-color: white;
-}
+`
 
-.item {
+export const FriendsItem = styled.li`
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -20,26 +22,20 @@
     margin-right: auto;
     border: 1px solid black;
     font-weight: bold;
-}
+`;
 
-.online {
+export const Status = styled.span`
     margin-left: 20px;
     margin-right: 5px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: green;
-}
 
-.offline {
-    margin-left: 20px;
-    margin-right: 5px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: red;
-}
+    background-color: ${({ isOnline }) =>
+        isOnline ? 'green' : 'red'
+    };
+`;
 
-.avatar {
+export const FriendsAvatar = styled.img`
     margin-right: 10px;
-}
+`;

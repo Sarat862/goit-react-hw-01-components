@@ -1,51 +1,53 @@
-.profile {
+import styled from 'styled-components';
+
+export const Container = styled.div`
     margin: 0 auto;
     padding-top: 20px;
     text-align:center;
     width: 200px;
     background-color: white;
-}
+`;
 
-.avatar {
+export const Avatar = styled.img`
     margin-bottom: 10px;
     border-radius: 50%;
     border: 3px solid black;
     width: 100px;
     box-shadow: 2px 8px 20px darkgrey;
-}
+`;
 
-.name {
+export const Name = styled.p`
     font-weight: bold;
     margin-bottom: 5px;
-}
+`;
 
-.tag {
+export const Tag = styled.p`
     margin-bottom: 5px;
     color: grey;
-}
+`;
 
-.location {
+export const Location = styled.p`
     margin-bottom: 10px;
     color: grey;
-}
+`;
 
-.stats {
+export const StatsList = styled.ul`
     display: flex;
     justify-content: center;
     gap: 10px;
     background-color:rgb(163, 190, 241);
-}
+`;
 
-.label {
-    display: flex;
-    color: grey;
-}
-
-.quantity {
-    font-weight: bold;
-}
-
-li {
+export const StatsItem = styled.li`
     padding-top: 5px;
     padding-bottom: 10px;
-}
+`
+
+export const StatsLabel = styled.span`
+    display: flex;
+    color: grey;
+`;
+
+export const StatsQuantity = styled.p`
+    font-weight: bold;
+`;
